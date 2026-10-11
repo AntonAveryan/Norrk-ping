@@ -1,0 +1,98 @@
+/* Design Tokens — Norrköping Platform */
+:root {
+  /* Core backgrounds */
+  --color-bg-main: #F4F5F7;
+  --color-bg-secondary: #EAEDF1;
+  --color-bg-tertiary: #E2E6EC;
+
+  /* Text */
+  --color-text-primary: #20242B;
+  --color-text-secondary: #6D7480;
+  --color-text-muted: #9299A3;
+  --color-text-white: #FFFFFF;
+  --color-text-white-secondary: rgba(255,255,255,0.78);
+
+  /* Surfaces */
+  --surface-standard: rgba(255,255,255,0.76);
+  --surface-elevated: rgba(255,255,255,0.86);
+  --surface-glass: rgba(255,255,255,0.46);
+  --surface-glass-dark: rgba(15,22,35,0.52);
+  --surface-opaque: #FFFFFF;
+  --surface-tinted: rgba(79,121,232,0.06);
+
+  /* Borders */
+  --border-glass: rgba(255,255,255,0.72);
+  --border-neutral: rgba(35,42,54,0.09);
+  --border-divider: rgba(35,42,54,0.07);
+  --border-focus: rgba(79,121,232,0.5);
+
+  /* Dark overlays */
+  --overlay-dark: rgba(12,18,26,0.38);
+  --overlay-strong: rgba(12,18,26,0.64);
+  --overlay-deep: rgba(12,18,26,0.82);
+
+  /* Accent colours */
+  --color-accent-blue: #4F79E8;
+  --color-accent-blue-deep: #315FC9;
+  --color-accent-teal: #3C9E96;
+  --color-accent-amber: #D9A45B;
+  --color-accent-coral: #E27E72;
+  --color-accent-violet: #8C7ADB;
+  --color-success: #26866B;
+  --color-warning: #B9802D;
+  --color-error: #C85454;
+
+  /* Category colours */
+  --cat-music: #E27E72;
+  --cat-culture: #8C7ADB;
+  --cat-career: #4F79E8;
+  --cat-sports: #26866B;
+  --cat-food: #D9A45B;
+  --cat-workshop: #3C9E96;
+
+  /* Corner radii */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-1: 0 2px 10px rgba(20,30,45,0.04);
+  --shadow-2: 0 8px 28px rgba(20,30,45,0.07);
+  --shadow-3: 0 16px 48px rgba(20,30,45,0.10);
+  --shadow-4: 0 24px 72px rgba(10,18,30,0.16);
+  --shadow-glass: 0 10px 36px rgba(20,30,45,0.09), inset 0 1px 0 rgba(255,255,255,0.6);
+  --shadow-glass-dark: 0 10px 36px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.12);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-30: 120px;
+
+  /* Typography */
+  --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+
+  /* Transitions */
+  --transition-fast: 140ms cubic-bezier(0.2,0.7,0.2,1);
+  --transition-base: 200ms cubic-bezier(0.2,0.7,0.2,1);
+  --transition-slow: 350ms cubic-bezier(0.2,0.7,0.2,1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
